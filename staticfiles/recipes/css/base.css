@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&font-display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 255, 255, 0.86);
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; 
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; 
+}
+
+
+body.fade-out {
+    opacity: 0;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: background-image 2s ease-in-out;
+}
+
+.cutboard-bg .background-image {
+    background-image: url('../images/cutboard.jpg');
+}
+
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fade-out .background-image {
+    transition: background-image 1s ease-out, background-color 1s ease-out;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.btn, .button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    outline: none;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+
+.btn:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
+.btn:focus {
+    outline: none;
+}
