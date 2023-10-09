@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Recipe</title>
+    <link rel="stylesheet" href="{% static 'recipes/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'recipes/css/create_recipe.css' %}">
+</head>
+<body class="cutboard-bg">
+    <div class="page-wrapper">
+        <div class="background-image"></div>
+        <div class="content-container">
+          <div class="create-recipe-container">
+            <h1>Create Recipe</h1>
+            <form method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <div id="preview" class="preview-image"></div>
+              <div>
+                <a href="https://www.pexels.com" target="_blank" class="button find_button">Find photos</a>
+              </div>
+              <button type="submit" class="button" style="background-color: rgb(250, 179, 64);">Create Recipe</button>
+
+          </form>
+          
+        </div>
+        
+            <a href="{% url 'recipes:recipe-list' %}" class="btn">Back to Recipe List</a>
+        </div>
+    </div>
+    <script src="{% static 'recipes/js/create_recipe.js' %}"></script>
+    <script src="{% static 'recipes/js/transition.js' %}"></script>
+</body>
+</html>

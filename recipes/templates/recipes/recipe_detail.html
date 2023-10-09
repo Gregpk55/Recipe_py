@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object.name }}</title>
+    <link rel="stylesheet" href="{% static 'recipes/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'recipes/css/recipe_detail.css' %}">
+</head>
+<body class="cutboard-bg">
+    <div class="page-wrapper">
+        <div class="background-image"></div>
+        <div class="content-container">
+            <div class="recipe-container">
+                <img src="{{ object.pic.url }}" alt="{{ object.name }}" class="recipe-image" />
+                <div class="recipe-details">
+                    <h1>{{ object.name }}</h1>
+                    <p><strong>Ingredients:</strong> {{ object.ingredients }}</p>
+                    <p><strong>Cooking Time:</strong> {{ object.cooking_time }} minutes</p>
+                    <p><strong>Description:</strong> {{ object.description }}</p>
+                    <p><strong>Difficulty:</strong> {{ object.difficulty }}</p>
+                </div>
+            </div>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="btn">Logout</a>
+            {% endif %}
+            <a href="{% url 'recipes:recipe-list' %}" class="btn">Back to Recipe List</a>
+        </div>
+    </div>
+    <script src="{% static 'recipes/js/transition.js' %}"></script>
+</body>
+</html>

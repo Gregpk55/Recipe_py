@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'recipes/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'recipes/css/login.css' %}"> 
+    <link rel="stylesheet" href="{% static 'recipes/css/signup.css' %}"> 
+</head>
+<body class="kitchen">
+<div class="background-image"></div>
+<div class="content-container">
+    <h1>Create Account</h1>
+    {% if form.errors %}
+        <p>There were error(s) in your signup details:</p>
+        <ul>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="POST" class="login-form">
+        {% csrf_token %}
+        <div class="fields-container">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+</div>
+<script src="{% static 'recipes/js/transition.js' %}"></script>
+</body>
+</html>

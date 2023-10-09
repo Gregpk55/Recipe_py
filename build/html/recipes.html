@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>recipes package &#8212; Recipe-App  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="recipes.migrations package" href="recipes.migrations.html" />
+    <link rel="prev" title="recipe_app package" href="recipe_app.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="recipes-package">
+<h1>recipes package<a class="headerlink" href="#recipes-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recipes.migrations.html">recipes.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recipes.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recipes.migrations.html#module-recipes.migrations.0001_initial">recipes.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recipes.migrations.html#module-recipes.migrations.0002_alter_recipe_cooking_time_alter_recipe_name">recipes.migrations.0002_alter_recipe_cooking_time_alter_recipe_name module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0002_alter_recipe_cooking_time_alter_recipe_name.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0002_alter_recipe_cooking_time_alter_recipe_name.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0002_alter_recipe_cooking_time_alter_recipe_name.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recipes.migrations.html#module-recipes.migrations.0003_alter_recipe_cooking_time_alter_recipe_ingredients">recipes.migrations.0003_alter_recipe_cooking_time_alter_recipe_ingredients module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0003_alter_recipe_cooking_time_alter_recipe_ingredients.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0003_alter_recipe_cooking_time_alter_recipe_ingredients.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipes.migrations.html#recipes.migrations.0003_alter_recipe_cooking_time_alter_recipe_ingredients.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recipes.migrations.html#module-recipes.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-recipes.admin">
+<span id="recipes-admin-module"></span><h2>recipes.admin module<a class="headerlink" href="#module-recipes.admin" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-recipes.apps">
+<span id="recipes-apps-module"></span><h2>recipes.apps module<a class="headerlink" href="#module-recipes.apps" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.apps.RecipeConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.apps.</span></span><span class="sig-name descname"><span class="pre">RecipeConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.apps.RecipeConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.apps.RecipeConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#recipes.apps.RecipeConfig.default_auto_field" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.apps.RecipeConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'recipes'</span></em><a class="headerlink" href="#recipes.apps.RecipeConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.forms">
+<span id="recipes-forms-module"></span><h2>recipes.forms module<a class="headerlink" href="#module-recipes.forms" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.forms.</span></span><span class="sig-name descname"><span class="pre">RecipeCreateForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.forms.RecipeCreateForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<p>Form for creating a new recipe or editing an existing one.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#recipes.forms.RecipeCreateForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['name',</span> <span class="pre">'ingredients',</span> <span class="pre">'cooking_time',</span> <span class="pre">'description',</span> <span class="pre">'pic']</span></em><a class="headerlink" href="#recipes.forms.RecipeCreateForm.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#recipes.forms.RecipeCreateForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#recipes.models.Recipe" title="recipes.models.Recipe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Recipe</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'cooking_time':</span> <span class="pre">&lt;django.forms.fields.FloatField</span> <span class="pre">object&gt;,</span> <span class="pre">'description':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'ingredients':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'pic':</span> <span class="pre">&lt;django.forms.fields.ImageField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#recipes.forms.RecipeCreateForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#recipes.forms.RecipeCreateForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="recipes.forms.RecipeCreateForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#recipes.forms.RecipeCreateForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.forms.RecipesSearchForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.forms.</span></span><span class="sig-name descname"><span class="pre">RecipesSearchForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_order=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.forms.RecipesSearchForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Form</span></code></p>
+<p>Form for searching recipes by name or ingredients and 
+selecting the type of chart and data for visualization.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipesSearchForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'chart_type':</span> <span class="pre">&lt;django.forms.fields.ChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'graph_data_type':</span> <span class="pre">&lt;django.forms.fields.ChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'search':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#recipes.forms.RecipesSearchForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.RecipesSearchForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'chart_type':</span> <span class="pre">&lt;django.forms.fields.ChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'graph_data_type':</span> <span class="pre">&lt;django.forms.fields.ChoiceField</span> <span class="pre">object&gt;,</span> <span class="pre">'search':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#recipes.forms.RecipesSearchForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="recipes.forms.RecipesSearchForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#recipes.forms.RecipesSearchForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.forms.</span></span><span class="sig-name descname"><span class="pre">SignUpForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.forms.SignUpForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserCreationForm</span></code></p>
+<p>Custom sign-up form for user registration.
+Extends Django’s default UserCreationForm.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#recipes.forms.SignUpForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('username',</span> <span class="pre">'password1',</span> <span class="pre">'password2')</span></em><a class="headerlink" href="#recipes.forms.SignUpForm.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#recipes.forms.SignUpForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#recipes.forms.SignUpForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#recipes.forms.SignUpForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="recipes.forms.SignUpForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#recipes.forms.SignUpForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.models">
+<span id="recipes-models-module"></span><h2>recipes.models module<a class="headerlink" href="#module-recipes.models" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.models.Recipe">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.models.</span></span><span class="sig-name descname"><span class="pre">Recipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.models.Recipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Represents a culinary recipe containing details about the dish.</p>
+<p>Attributes:
+- name (CharField): The name of the recipe.
+- cooking_time (FloatField): Time (in minutes) needed to prepare the dish.
+- ingredients (CharField): A comma-separated string of ingredients used.
+- description (TextField): A detailed description of the recipe.
+- pic (ImageField): An optional image representing the dish.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="recipes.models.Recipe.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#recipes.models.Recipe.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="recipes.models.Recipe.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#recipes.models.Recipe.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.cooking_time">
+<span class="sig-name descname"><span class="pre">cooking_time</span></span><a class="headerlink" href="#recipes.models.Recipe.cooking_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#recipes.models.Recipe.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.models.Recipe.difficulty">
+<span class="sig-name descname"><span class="pre">difficulty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#recipes.models.Recipe.difficulty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the difficulty level of the recipe based on cooking time and ingredient count.</p>
+<p>Difficulty Levels:
+- Easy: Cooking time &lt; 10 mins and less than 4 ingredients.
+- Medium: Cooking time &lt; 10 mins and 4 or more ingredients.
+- Intermediate: Cooking time &gt;= 10 mins and less than 4 ingredients.
+- Hard: Cooking time &gt;= 10 mins and 4 or more ingredients.</p>
+<p>Returns:
+- str: A string representing the difficulty level.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#recipes.models.Recipe.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.ingredients">
+<span class="sig-name descname"><span class="pre">ingredients</span></span><a class="headerlink" href="#recipes.models.Recipe.ingredients" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#recipes.models.Recipe.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#recipes.models.Recipe.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.models.Recipe.pic">
+<span class="sig-name descname"><span class="pre">pic</span></span><a class="headerlink" href="#recipes.models.Recipe.pic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.models.Recipe.return_ingredients_as_list">
+<span class="sig-name descname"><span class="pre">return_ingredients_as_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#recipes.models.Recipe.return_ingredients_as_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the comma-separated string of ingredients into a list.</p>
+<p>Returns:
+- list: A list containing individual ingredients.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.tests">
+<span id="recipes-tests-module"></span><h2>recipes.tests module<a class="headerlink" href="#module-recipes.tests" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests.</span></span><span class="sig-name descname"><span class="pre">DetailsViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest.test_details_view_displays_correct_data">
+<span class="sig-name descname"><span class="pre">test_details_view_displays_correct_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest.test_details_view_displays_correct_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest.test_details_view_for_non_existent_recipe">
+<span class="sig-name descname"><span class="pre">test_details_view_for_non_existent_recipe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest.test_details_view_for_non_existent_recipe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.DetailsViewTest.test_details_view_uses_correct_template">
+<span class="sig-name descname"><span class="pre">test_details_view_uses_correct_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.DetailsViewTest.test_details_view_uses_correct_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests.HomeViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests.</span></span><span class="sig-name descname"><span class="pre">HomeViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.HomeViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.HomeViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.HomeViewTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.HomeViewTest.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.HomeViewTest.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.HomeViewTest.test_home_view_uses_correct_template">
+<span class="sig-name descname"><span class="pre">test_home_view_uses_correct_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.HomeViewTest.test_home_view_uses_correct_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests.ListViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests.</span></span><span class="sig-name descname"><span class="pre">ListViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.ListViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.ListViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.ListViewTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.ListViewTest.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.ListViewTest.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.ListViewTest.test_list_view_displays_items">
+<span class="sig-name descname"><span class="pre">test_list_view_displays_items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.ListViewTest.test_list_view_displays_items" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.ListViewTest.test_list_view_uses_correct_template">
+<span class="sig-name descname"><span class="pre">test_list_view_uses_correct_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.ListViewTest.test_list_view_uses_correct_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests.</span></span><span class="sig-name descname"><span class="pre">RecipeModelTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_difficulty">
+<span class="sig-name descname"><span class="pre">test_difficulty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_difficulty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_invalid_cooking_time">
+<span class="sig-name descname"><span class="pre">test_invalid_cooking_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_invalid_cooking_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_recipe_name">
+<span class="sig-name descname"><span class="pre">test_recipe_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_recipe_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_recipe_with_no_ingredients">
+<span class="sig-name descname"><span class="pre">test_recipe_with_no_ingredients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_recipe_with_no_ingredients" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_recipe_with_zero_cooking_time">
+<span class="sig-name descname"><span class="pre">test_recipe_with_zero_cooking_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_recipe_with_zero_cooking_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests.RecipeModelTest.test_return_ingredients_as_list">
+<span class="sig-name descname"><span class="pre">test_return_ingredients_as_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests.RecipeModelTest.test_return_ingredients_as_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.tests_2">
+<span id="recipes-tests-2-module"></span><h2>recipes.tests_2 module<a class="headerlink" href="#module-recipes.tests_2" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_2.</span></span><span class="sig-name descname"><span class="pre">LoginRequiredViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.test_detail_view_with_login">
+<span class="sig-name descname"><span class="pre">test_detail_view_with_login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.test_detail_view_with_login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.test_detail_view_without_login">
+<span class="sig-name descname"><span class="pre">test_detail_view_without_login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.test_detail_view_without_login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.test_list_view_with_login">
+<span class="sig-name descname"><span class="pre">test_list_view_with_login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.test_list_view_with_login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.LoginRequiredViewTest.test_list_view_without_login">
+<span class="sig-name descname"><span class="pre">test_list_view_without_login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.LoginRequiredViewTest.test_list_view_without_login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_2.RecipeFormTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_2.</span></span><span class="sig-name descname"><span class="pre">RecipeFormTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.RecipeFormTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.RecipeFormTest.test_form_fields">
+<span class="sig-name descname"><span class="pre">test_form_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.RecipeFormTest.test_form_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_2.SearchRecipesViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_2.</span></span><span class="sig-name descname"><span class="pre">SearchRecipesViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.SearchRecipesViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.SearchRecipesViewTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.SearchRecipesViewTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.SearchRecipesViewTest.tearDown">
+<span class="sig-name descname"><span class="pre">tearDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.SearchRecipesViewTest.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.SearchRecipesViewTest.test_search_recipes_context_data">
+<span class="sig-name descname"><span class="pre">test_search_recipes_context_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.SearchRecipesViewTest.test_search_recipes_context_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_2.SearchRecipesViewTest.test_search_recipes_with_valid_input">
+<span class="sig-name descname"><span class="pre">test_search_recipes_with_valid_input</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_2.SearchRecipesViewTest.test_search_recipes_with_valid_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.tests_3">
+<span id="recipes-tests-3-module"></span><h2>recipes.tests_3 module<a class="headerlink" href="#module-recipes.tests_3" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_3.CreateRecipeViewTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_3.</span></span><span class="sig-name descname"><span class="pre">CreateRecipeViewTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.CreateRecipeViewTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.CreateRecipeViewTest.test_view_url_accessible_by_name">
+<span class="sig-name descname"><span class="pre">test_view_url_accessible_by_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.CreateRecipeViewTest.test_view_url_accessible_by_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.CreateRecipeViewTest.test_view_url_exists_at_desired_location">
+<span class="sig-name descname"><span class="pre">test_view_url_exists_at_desired_location</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.CreateRecipeViewTest.test_view_url_exists_at_desired_location" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.CreateRecipeViewTest.test_view_uses_correct_template">
+<span class="sig-name descname"><span class="pre">test_view_uses_correct_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.CreateRecipeViewTest.test_view_uses_correct_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_3.RecipeCreationTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_3.</span></span><span class="sig-name descname"><span class="pre">RecipeCreationTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.RecipeCreationTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.RecipeCreationTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.RecipeCreationTest.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.RecipeCreationTest.test_create_recipe">
+<span class="sig-name descname"><span class="pre">test_create_recipe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.RecipeCreationTest.test_create_recipe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.tests_3.UserCreationTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.tests_3.</span></span><span class="sig-name descname"><span class="pre">UserCreationTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.UserCreationTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.tests_3.UserCreationTest.test_create_user">
+<span class="sig-name descname"><span class="pre">test_create_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.tests_3.UserCreationTest.test_create_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-recipes.urls">
+<span id="recipes-urls-module"></span><h2>recipes.urls module<a class="headerlink" href="#module-recipes.urls" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-recipes.utils">
+<span id="recipes-utils-module"></span><h2>recipes.utils module<a class="headerlink" href="#module-recipes.utils" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.utils.get_chart">
+<span class="sig-prename descclassname"><span class="pre">recipes.utils.</span></span><span class="sig-name descname"><span class="pre">get_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chart_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chart_data_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cooking_time'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queryset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.utils.get_chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a chart based on the provided data and chart type.</p>
+<p>This function uses Matplotlib to generate charts. The generated chart is then
+converted into a base64-encoded PNG image which can be embedded in web pages.</p>
+<dl>
+<dt>Parameters:</dt><dd><p>chart_type (str): The type of chart (‘#1’ for Bar, ‘#2’ for Pie, ‘#3’ for Line).
+data (DataFrame, optional): The data for the chart. Defaults to None.
+chart_data_type (str, optional): Specifies the type of data to be plotted</p>
+<blockquote>
+<div><p>(‘cooking_time’ or ‘difficulty’). Defaults to ‘cooking_time’.</p>
+</div></blockquote>
+<p>queryset (QuerySet, optional): An optional Django QuerySet to retrieve data from. Defaults to None.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: A base64-encoded PNG representation of the chart.</p>
+</dd>
+<dt>Raises:</dt><dd><p>ValueError: If an unsupported chart data type is provided.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.utils.get_cooking_time_chart">
+<span class="sig-prename descclassname"><span class="pre">recipes.utils.</span></span><span class="sig-name descname"><span class="pre">get_cooking_time_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chart_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.utils.get_cooking_time_chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a chart based on the cooking time for each recipe.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>chart_type (str): The type of chart to be drawn.
+data (DataFrame): DataFrame containing the cooking time data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.utils.get_difficulty_chart">
+<span class="sig-prename descclassname"><span class="pre">recipes.utils.</span></span><span class="sig-name descname"><span class="pre">get_difficulty_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chart_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queryset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.utils.get_difficulty_chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a chart representing the difficulty of each recipe.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>chart_type (str): The type of chart to be drawn.
+queryset (QuerySet, optional): QuerySet containing recipe data. Defaults to None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.utils.get_difficulty_data">
+<span class="sig-prename descclassname"><span class="pre">recipes.utils.</span></span><span class="sig-name descname"><span class="pre">get_difficulty_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recipes.utils.get_difficulty_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches the count of recipes per difficulty level.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dict: A dictionary containing the count of recipes for each difficulty.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-recipes.views">
+<span id="recipes-views-module"></span><h2>recipes.views module<a class="headerlink" href="#module-recipes.views" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.views.RecipeDetailView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">RecipeDetailView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.RecipeDetailView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">LoginRequiredMixin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">DetailView</span></code></p>
+<p>Displays the detailed view of a single recipe.</p>
+<p>Users must be logged in to access this view.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.views.RecipeDetailView.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#recipes.views.RecipeDetailView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#recipes.models.Recipe" title="recipes.models.Recipe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Recipe</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.views.RecipeDetailView.template_name">
+<span class="sig-name descname"><span class="pre">template_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'recipes/recipe_detail.html'</span></em><a class="headerlink" href="#recipes.views.RecipeDetailView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="recipes.views.RecipeListView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">RecipeListView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.RecipeListView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">LoginRequiredMixin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ListView</span></code></p>
+<p>Displays a list of all recipes.</p>
+<p>Users must be logged in to access this view.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.views.RecipeListView.context_object_name">
+<span class="sig-name descname"><span class="pre">context_object_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'recipes'</span></em><a class="headerlink" href="#recipes.views.RecipeListView.context_object_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="recipes.views.RecipeListView.get_context_data">
+<span class="sig-name descname"><span class="pre">get_context_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.RecipeListView.get_context_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overriden to add the search form to the context.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.views.RecipeListView.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#recipes.views.RecipeListView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#recipes.models.Recipe" title="recipes.models.Recipe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Recipe</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="recipes.views.RecipeListView.template_name">
+<span class="sig-name descname"><span class="pre">template_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'recipes/recipe_list.html'</span></em><a class="headerlink" href="#recipes.views.RecipeListView.template_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.views.about_view">
+<span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">about_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.about_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the about page with information about the project.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.views.create_recipe">
+<span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">create_recipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.create_recipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables users to create a new recipe.</p>
+<p>Supports both GET (displaying the form) and POST (saving the recipe).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.views.home">
+<span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.home" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the home page of the application.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.views.search_recipes">
+<span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">search_recipes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.search_recipes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows users to search for recipes by name or ingredients.
+Also provides charts for visualizing recipe data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="recipes.views.signup_view">
+<span class="sig-prename descclassname"><span class="pre">recipes.views.</span></span><span class="sig-name descname"><span class="pre">signup_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#recipes.views.signup_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows new users to sign up to the application.</p>
+<p>Supports both GET (displaying the signup form) and POST (registering the user).</p>
+</dd></dl>
+
+</section>
+<section id="module-recipes">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-recipes" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Recipe-App</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recipe_app.html">recipe_app package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">recipes package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Models Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="views.html">Views Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="forms.html">Forms Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manage.html">manage module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipe_app.html">recipe_app package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes.migrations.html">recipes.migrations package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">recipes package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.admin">recipes.admin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.apps">recipes.apps module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.forms">recipes.forms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.models">recipes.models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.tests">recipes.tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.tests_2">recipes.tests_2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.tests_3">recipes.tests_3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.urls">recipes.urls module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.utils">recipes.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes.views">recipes.views module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-recipes">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">src</a><ul>
+      <li>Previous: <a href="recipe_app.html" title="previous chapter">recipe_app package</a></li>
+      <li>Next: <a href="recipes.migrations.html" title="next chapter">recipes.migrations package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Greg Kennedy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/recipes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

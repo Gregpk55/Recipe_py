@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search for Recipes</title>
+    <link rel="stylesheet" href="{% static 'recipes/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'recipes/css/recipe_list.css' %}">
+    <link rel="stylesheet" href="{% static 'recipes/css/search.css' %}">
+</head>
+<body class="cutboard-bg">
+    <div class="background-image"></div>
+    <div class="content-container">
+        <h1>Search for Recipes</h1>
+        <div class="form-container">
+            <form method="GET" action="." class="search-form">
+                {{ form.search }}
+                {{ form.chart_type }}
+                {{ form.graph_data_type }}
+                <input type="submit" value="Search" class="btn search-btn">
+                <a href="?show_all=true&graph_data_type={{ form.graph_data_type.value }}" class="btn" id="showAllBtn">Show All Recipes</a>
+            </form>
+        </div>
+
+        <div class="main-container">
+    <div class="table-container">
+        {% if recipes_df %}
+            {{ recipes_df|safe }}
+        {% else %}
+            <p>No recipes are available.</p>
+        {% endif %}
+    </div>
+    <div class="chart-container">
+        {% if chart %}
+        
+
+            <img src="data:image/png;base64,{{ chart }}" alt="Chart">
+        {% else %}
+            <p>No data available to plot the chart.</p>
+        {% endif %}
+    </div>
+    
+    <div class="buttons-container">
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" class="btn">Logout</a>
+        {% endif %}
+        <a href="{% url 'recipes:recipe-list' %}" class="btn">Back to Recipe List</a>
+    </div>
+</div>
+</div>
+    <script src="{% static 'recipes/js/transition.js' %}"></script>
+</body>
+</html>
