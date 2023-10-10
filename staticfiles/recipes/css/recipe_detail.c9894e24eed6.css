@@ -1,0 +1,62 @@
+
+.background-image {
+    background-image: url("../images/cutboard.ea31045d7987.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.recipe-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 300px; 
+    height: 500px; 
+    overflow-y: auto; 
+}
+
+
+.recipe-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+h1 {
+    margin: 10px 0;
+    color: #000; 
+}
+
+.recipe-details p {
+    margin: 0;
+    padding: 5px 0;
+    color: #000; 
+}
+
+.btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}

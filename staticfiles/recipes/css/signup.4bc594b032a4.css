@@ -1,0 +1,28 @@
+
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.346); 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.fields-container label,
+.fields-container p {
+    font-size: 16px;
+    color: white;
+}
+
+.fields-container input {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+li {
+    color: white;
+
+}

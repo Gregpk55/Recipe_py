@@ -1,0 +1,31 @@
+
+
+.content-container {
+    z-index: 1; 
+}
+
+
+
+.background-image {
+    background-image: url("../images/kitchen.7ba714c241f0.jpg");
+    background-size: cover;
+}
+
+.btn {
+    margin: 20px auto;
+    display: block;
+}
+
+label {
+    margin-top: 20px;
+    color: #fff;   
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 3px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #ffffff; 
+    font-size: 12px;
+    outline: none;
+    padding: 5px 10px; 
+    text-decoration: none;
+}
